@@ -1,0 +1,14 @@
+{
+    "Email": "User name or emal",
+    "Password": "Password",
+    "SingIn": "Sing In",
+    "BookList": "Book List",
+    "Title": "Title",
+    "Author": "Author",
+    "Publisher": "Publisher",
+    "Genre": "Genre",
+    "Year": "Year",
+    "Available": "Available online",
+    "Price": "Price",
+    "Summary": "Summary"
+}

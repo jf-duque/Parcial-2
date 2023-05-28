@@ -1,0 +1,14 @@
+{
+    "Email": "Nombre de usuario o Email",
+    "Password": "Contraseña",
+    "SingIn": "Iniciar Sesion",
+    "BookList": "Listado de libros",
+    "Title": "Titulo",
+    "Author": "Autor",
+    "Publisher": "Editorial",
+    "Genre": "Genero",
+    "Year": "Año",
+    "Available": "Disponible en linea",
+    "Price": "Precio",
+    "Summary": "Resumen"
+}

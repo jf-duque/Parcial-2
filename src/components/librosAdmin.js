@@ -7,7 +7,7 @@ import { FormattedMessage } from 'react-intl';
 
 const { useEffect, useState } = require("react");
 
-function Libros () {
+function LibrosAdmin () {
 
    const [selectedLibro, setSelectedLibro] = useState(null);
    const [libros, setLibros] = useState([]);
@@ -38,14 +38,22 @@ function Libros () {
                 </Col>
                 <Col sm={3}>
                     <div style={{border: '1px solid black', padding: '20px', borderRadius: '5px', textAlign:'left'}}>
-                        <h3 style={{textAlign: 'center'}}>{selectedLibro?.name}</h3>
+                        <Row>
+                            <Col xs={4}>
+                                <h6><FormattedMessage id="Title"/>: </h6>
+                            </Col>
+                            <Col xs={8}>
+                                <input defaultValue={selectedLibro?.name} size={17}/>
+                            </Col>
+                        </Row>
+
                         <hr></hr>
                         <Row>
                             <Col xs={4}>
                                 <h6>ISBN: </h6>
                             </Col>
                             <Col xs={8}>
-                                <p>{selectedLibro?.isbn}</p>
+                                <input defaultValue={selectedLibro?.isbn} size={17}/>
                             </Col>
                         </Row>
                         <Row>
@@ -53,7 +61,7 @@ function Libros () {
                                 <h6><FormattedMessage id="Author"/>: </h6>
                             </Col>
                             <Col xs={8}>
-                                <p>{selectedLibro?.author}</p>
+                                <input defaultValue={selectedLibro?.author} size={17}/>
                             </Col>
                         </Row>
                         <Row>
@@ -61,7 +69,7 @@ function Libros () {
                                 <h6><FormattedMessage id="Publisher"/>: </h6>
                             </Col>
                             <Col xs={8}>
-                                <p>{selectedLibro?.publisher}</p>
+                                <input defaultValue={selectedLibro?.publisher} size={17}/>
                             </Col>
                         </Row>
                         <Row>
@@ -69,7 +77,7 @@ function Libros () {
                                 <h6><FormattedMessage id="Genre"/>: </h6>
                             </Col>
                             <Col xs={8}>
-                                <p>{selectedLibro?.gender}</p>
+                                <input defaultValue={selectedLibro?.gender} size={17}/>
                             </Col>
                         </Row>
                         <Row>
@@ -77,7 +85,7 @@ function Libros () {
                                 <h6><FormattedMessage id="Year"/>: </h6>
                             </Col>
                             <Col xs={8}>
-                                <p>{selectedLibro?.year}</p>
+                                <input defaultValue={selectedLibro?.year} size={17}/>
                             </Col>
                         </Row>
                         <Row>
@@ -85,7 +93,7 @@ function Libros () {
                                 <h6><FormattedMessage id="Available"/>: </h6>
                             </Col>
                             <Col xs={8}>
-                                <p>{selectedLibro?.available_online ? 'Sí' : 'No'}</p>
+                                <input defaultValue={selectedLibro?.available_online} size={17}/>
                             </Col>
                         </Row>
                         <Row>
@@ -93,7 +101,7 @@ function Libros () {
                                 <h6><FormattedMessage id="Price"/>: </h6>
                             </Col>
                             <Col xs={8}>
-                                <p>{selectedLibro?.price}</p>
+                                <input defaultValue={selectedLibro?.price} size={17}/>
                             </Col>
                         </Row>
                         <Row>
@@ -101,7 +109,7 @@ function Libros () {
                                 <h6><FormattedMessage id="Summary"/>: </h6>
                             </Col>
                             <Col xs={8}>
-                                <p>{selectedLibro?.summary}</p>
+                                <textarea defaultValue={selectedLibro?.summary} style={{height:'150px', width:'165px'}}></textarea>
                             </Col>
                         </Row>
                     </div>
@@ -112,4 +120,4 @@ function Libros () {
    )
 }
 
-export default Libros;
+export default LibrosAdmin;
